@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half Circle Banner</title>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background for the page */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    background: radial-gradient(circle at center, #000 60%, transparent 100%);
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+    box-shadow: 0 0 80px 40px rgba(255, 255, 0, 0.51),
+                0 0 150px 60px rgba(255, 255, 0, 0.349);
+}
+
+/* Outer Glow Effect */
+.banner:before {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: -20%;
+    left: -10%;
+    /* background: radial-gradient(circle, rgba(255, 255, 0, 0.5) 20%, transparent 70%); */
+    z-index: 0;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    filter: blur(50px);
+    pointer-events: none;
+}
+
+/* Content Section */
+.banner-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* submit Styling */
+.submit {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.submit button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #000;
+    background-color: #ffff00;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit button:hover {
+    background-color: #ffd700;
+}
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Lunar IT Solutions</h1>
+            <p>
+                one of the leading companies in nepal<br> for better future</p>
+            <form class="submit">
+                <button type="submit">About Us</button>
+                <button type="submit">Contact Us</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

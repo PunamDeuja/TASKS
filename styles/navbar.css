@@ -1,0 +1,54 @@
+/* Header */
+header {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    margin-left: 90px;
+}
+nav{
+   border-radius: 25px;
+   background-color: #171717;
+   opacity: 2;
+}
+nav ul {
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+nav ul li a:hover {
+    color: #ffff00;
+}
+
+.btn button {
+    padding: 0.5rem 1rem;
+    margin-right: 3rem;
+    border: none;
+    background: #ffff00;
+    color: rgb(21, 18, 18);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn button:hover {
+    background-color: #e8261b;
+    transform: scale(1.05);
+}

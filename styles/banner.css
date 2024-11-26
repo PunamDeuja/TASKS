@@ -1,0 +1,84 @@
+/* Banner Image */
+body img {
+    z-index: 1; /* Send the image to the back */
+}
+
+/* Main Section */
+#first{
+    background-color: black;
+    height: 710px;
+    display: flex;
+    
+}
+#first .banner {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    margin-left: 330px;
+    margin-top: 155px;
+    overflow: hidden;
+    text-align: center;
+    background: radial-gradient(circle at center, #000 60%, transparent 100%);
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+    box-shadow: 0 0 80px 40px rgba(255, 255, 0, 0.51), 0 0 150px 60px rgba(255, 255, 0, 0.349);
+}
+
+/* Outer Glow Effect */
+#first .banner:before {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: -20%;
+    left: -10%;
+    /* background: radial-gradient(circle, rgba(255, 255, 0, 0.5) 20%, transparent 70%); */
+    z-index: 0;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+}
+
+/* Content Section */
+#first .banner-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+}
+
+#first .banner-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: white;
+}
+
+#first .banner-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: white;
+}
+
+/* submit Styling */
+#first .submit {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+#first .submit button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #000;
+    background-color: #ffff00;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#first .submit button:hover {
+    background-color: #ffd700;
+}
