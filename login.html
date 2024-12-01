@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account Page</title>
+    <style>
+        /* General Reset */
+        body {
+            font-family: 'Arial', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: black;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .section {
+            background-color: white;
+            color: black;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 25px;
+            width: 400px;
+            box-shadow: 0px 4px 10px #41445b;
+        }
+
+        .section h1 {
+            margin-bottom: 10px;
+            font-size: 26px;
+        }
+
+        .section p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .input-group input {
+            flex: 1;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin: 10px 0 20px 0;
+        }
+
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+
+        .checkbox-group label a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .create-account-btn {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: navy;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .create-account-btn:hover {
+            background-color: #808053;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-links img {
+            height: 45px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="section">
+            <img src="images/logoR.png" class="logo" style="height: 90px; width: 150px; margin-left: 125px;">
+            <h1>Create an account</h1>
+            <p>Already have an account? <a href="#">Log in</a></p>
+            <form action="#">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Enter your password">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">
+                        I agree to the <a href="#">Terms & Conditions</a>
+                    </label>
+                </div>
+                <button type="submit" class="create-account-btn">Create account</button>
+                <p style="color: blue;">Or Register With</p>
+                <div class="social-buttons">
+                    <a href="#" class="social-links">
+                        <img src="images/google.PNG" alt="Google" style="height: 45px;">
+                    </a>
+                    <a href="#" class="social-links">
+                        <img src="images/fb.PNG" alt="Facebook" style="height: 45px;">
+                    </a>
+                    <a href="#" class="social-links">
+                        <img src="images/linkedin1.png" alt="LinkedIn" style="height: 40px;">
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

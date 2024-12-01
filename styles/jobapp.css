@@ -1,0 +1,160 @@
+#jobappform {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, white, #181818);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    width: 650px;
+    height: 630px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffa500;
+}
+
+.form-container img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #090b28;
+}
+
+input,
+select {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: -30px;
+}
+
+
+.employment-status {
+    margin: 20px 0;
+    color: white;
+    position: relative;
+    margin-bottom: -10px;
+}
+
+.employment-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.clear-choice {
+    font-size: 14px;
+    color: #f0a500;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+.clear-choice:hover {
+    text-decoration: underline;
+}
+
+.radio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e30;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.radio-option input {
+    display: none;
+}
+
+.radio-option input:checked+span {
+    font-weight: bold;
+    color: #f0a500;
+}
+
+.radio-option:hover {
+    border-color: #f0a500;
+}
+
+input[type="file"] {
+    background: none;
+    border: 2px dashed #ffa500;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group>div {
+    flex: 1;
+}
+
+.submit-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffa500;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ffbf00;
+}
+
+a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

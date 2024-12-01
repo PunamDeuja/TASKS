@@ -1,111 +1,63 @@
-#container {
-    max-width: 1200px;
-    padding: 20px;
-    text-align: center;
-    /* background-color: #181818; */
-    margin-left: 145px;
-  }
+#ser .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem;
+}
+/* Grid Container */
+#ser .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
 
-  #container h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: white;
-  }
+/* Grid Items */
+#ser .grid-item {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-  #container .sub-text {
-    font-size: 1.2rem;
-    color: #aaa;
-    margin-bottom: 20px;
-  }
+#ser .grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
 
-  /* Explore Button */
-  #container .explore-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px 0;
-    background-color: #333;
-    color: #fff;
-    border: 2px solid #555;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
+/* Plus Icon */
+#ser .plus-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  background-color: #ffff00;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  #container .explore-button:hover {
-    background-color: #555;
-  }
+/* Icons */
+#ser .icon {
+  max-width: 80px;
+  margin: 1rem auto;
+  display: block;
+}
 
-  /* Card Layout */
-  #container .services {
-    display: flex;
-    gap: 20px;
-    height: 300px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 20px 0;
-  }
+#ser .icon-placeholder {
+  font-size: 2rem;
+  margin: 1rem auto;
+  color: #fff;
+}
 
-  #container .service-card {
-    background-color: #181818;
-    border-radius: 12px;
-    min-width: 300px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(129, 191, 208, 0.3);
-    transition: transform 0.3s;
-  }
-
-
-  #container .service-card:hover {
-    transform: scale(1.05);
-  }
-
-  #container .service-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    margin-left: 105px;
-  }
-
-  #container .service-title {
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin: 10px 0;
-    color: white;
-  }
-
-  #container .service-description {
-    font-size: 1rem;
-    color: #ccc;
-    line-height: 1.5;
-  }
-
-  /* Carousel Controls */
-  #container .carousel-controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-  #container .carousel-btn {
-    font-size: 1.5rem;
-    color: #aaa;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-
-  #container .carousel-btn:hover {
-    color: #fff;
-  }
-  
-  #container .service-card {
-      width: 90%;
-    }
+/* Grid Item Text */
+#ser .grid-item h3 {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 1rem;
+}
